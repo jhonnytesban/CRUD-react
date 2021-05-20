@@ -1,4 +1,5 @@
 import React, { Fragment } from "react";
+import '../styles/Task.css';
 
 const Task = ({ el, setTask, task }) => {
 
@@ -10,12 +11,10 @@ const Task = ({ el, setTask, task }) => {
 
   return (
     <Fragment>
-      <tr>
-        <td>{el}</td>
-        <td>
-          <button onClick={handleDelete}>Eliminar</button>
-        </td>
-      </tr>
+      <li className="list">
+        <p>{el}</p>
+        <button className="list__btn" onClick={handleDelete}>Eliminar</button>
+      </li>
     </Fragment>
   );
 };

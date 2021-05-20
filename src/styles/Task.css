@@ -1,0 +1,13 @@
+.list{
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  margin: 5px 10%;
+}
+.list__btn{
+  border: none;
+  /* border-radius: 20px; */
+  box-sizing: border-box;
+  padding: 0;
+  height: 25px;
+}

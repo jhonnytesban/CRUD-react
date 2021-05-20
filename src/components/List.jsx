@@ -19,30 +19,15 @@ const List = ({ data, setData }) => {
   return (
     <Fragment>
       <h2>Lista de Tareas</h2>
-      <table>
-        <thead>
-          <tr>
-            <th>Tarea</th>
-            <th>Acciones</th>
-          </tr>
-        </thead>
-        <tbody>
-          {task === undefined ? (
-            <tr>
-              <td colSpan="2">No hay datos</td>
-            </tr>
-          ) : (
-            task.map((el) => (
-              <Task
-                key={uuidv4()}
-                el={el}
-                setTask={setTask}
-                task={task}
-              />
-            ))
-          )}
-        </tbody>
-      </table>
+      <ul>
+        {task.length === 0 ? (
+          <li>No hay datos</li>
+        ) : (
+          task.map((el) => (
+            <Task key={uuidv4()} el={el} setTask={setTask} task={task} />
+          ))
+        )}
+      </ul>
     </Fragment>
   );
 };
