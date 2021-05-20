@@ -1,0 +1,16 @@
+.form{
+  text-align: center;
+  background-color: rgb(71, 71, 71);
+  margin: 0 5%;
+  padding: 20px;
+}
+.form__text{
+  padding: 5px 10px;
+  border: none;
+  border-radius: 10px;
+  background-color: rgb(71, 71, 71);
+}
+.btn{
+  border: none;
+  margin-left: 10px;
+}
