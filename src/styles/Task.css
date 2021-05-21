@@ -2,7 +2,10 @@
   display: flex;
   justify-content:space-between;
   align-items: center;
-  margin: 5px 10%;
+  margin: 5px 15%;
+  background-color: rgba(65, 65, 65, 0.5);
+  padding: 0 5%;
+  border-radius: 10px;
 }
 .list__btn{
   border: none;
