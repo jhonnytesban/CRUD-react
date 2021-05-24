@@ -1,6 +1,7 @@
 import React, { Fragment, useState } from "react";
 import { save, get } from "../services/services";
 import "../styles/Form.css";
+import { TextField } from "@material-ui/core";
 
 const Form = ({ setData }) => {
   const [form, setForm] = useState("");
@@ -28,15 +29,22 @@ const Form = ({ setData }) => {
   return (
     <Fragment>
       <form className="form" onSubmit={handleSubmit}>
-        <input
+        {/* <input
           className="form__text"
           type="text"
           name="content"
           placeholder="Escribe la tarea"
           onChange={handleChange}
           value={form}
+        /> */}
+        <TextField
+          id="standard-basic"
+          label="Escribe la tarea"
+          name="content"
+          onChange={handleChange}
+          value={form}
         />
-        <input type="submit" value="Enviar" className="btn" />
+        <input type="submit" value="Añadir" className="btn" />
       </form>
     </Fragment>
   );

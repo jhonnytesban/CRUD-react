@@ -9,12 +9,14 @@ function App() {
 
   return (
     <Fragment>
-      <header>
-        <h1>To Do List (con Local Storage)</h1>
-      </header>
-      <Form 
-        setData = {setData}
-      />
+      <div className="container">
+        <header>
+          <h1 className="title-app">To Do List</h1>
+        </header>
+        <Form 
+          setData = {setData}
+        />
+      </div>
       <List
         data = {data}
         setData={setData}
