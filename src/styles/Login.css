@@ -1,0 +1,32 @@
+.login-container{
+  background: linear-gradient(to right, rgba(15, 32, 39, 0.5), rgba(32, 58, 67, 0.5), rgba(44, 83, 100, 0.5)), url(../assets/noche3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-bottom: 50px;
+}
+.title__login{
+  text-align: center;
+  margin-top: 0;
+  padding-top: 40px;
+  color: #fff;
+}
+.form__login{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  padding: 20px;
+  background-color: rgba(216, 216, 216, 0.2);
+  margin: 0 40px;
+}
+.form__input{
+  margin-bottom: 10px;
+  border: none;
+  border-bottom: 1px solid black;
+  background-color: rgba(255, 255, 255, 0);
+}
+::placeholder{
+  color: #fff;
+}
