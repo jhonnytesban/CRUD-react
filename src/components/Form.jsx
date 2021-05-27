@@ -44,7 +44,7 @@ const Form = ({ setData }) => {
           onChange={handleChange}
           value={form}
         />
-        <input type="submit" value="Añadir" className="btn" />
+        {/* <input type="submit" value="Añadir" className="btn" /> */}
       </form>
     </Fragment>
   );
